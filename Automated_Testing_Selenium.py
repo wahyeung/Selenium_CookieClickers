@@ -13,7 +13,7 @@ service = Service(executable_path="./chromedriver")
 driver = webdriver.Chrome(service=service)
 
 # Navigate to the e-commerce website
-driver.get("https://workco-qa-assessment.netlify.app")
+driver.get("https://********.netlify.app") #For copyright issues.
 
 # Wait until the password input box is present
 WebDriverWait(driver,5).until(
@@ -23,7 +23,7 @@ input_element = driver.find_element(By.NAME, "password")
 input_element.clear()
 
 # Enter the password and submit
-input_element.send_keys("w&c0-252!$@2445" + Keys.ENTER)
+input_element.send_keys("*******" + Keys.ENTER)
 time.sleep(1)
 
 # Wait for the 'Start Shopping' link to become clickable
